@@ -4,6 +4,6 @@ class Api::SpotsController < ApplicationController
   end
 
   def show
-    render json: Speaker.find(params[:id])
+    render json: Spot.find(params[:id])
   end
 end
