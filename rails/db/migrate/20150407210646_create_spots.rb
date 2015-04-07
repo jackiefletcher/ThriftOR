@@ -1,6 +1,6 @@
-class CreateBargains < ActiveRecord::Migration
+class CreateSpots < ActiveRecord::Migration
   def change
-    create_table :bargains do |t|
+    create_table :spots do |t|
       t.string :name
       t.string :location
       t.string :kind
