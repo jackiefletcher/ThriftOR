@@ -11,5 +11,7 @@ export default Router.map(function() {
 
 Router.map(function() {
   this.route('about');
-  this.resource('spots');
+  this.resource('spots', function() {
+    this.route('show', {path: ':spot_id'});
+  });
 });

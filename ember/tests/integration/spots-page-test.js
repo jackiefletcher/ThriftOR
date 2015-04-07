@@ -48,3 +48,24 @@ module('Integration - Spots Page', {
       });
     });
   });
+
+  test('Should list all spots', function(assert) {
+    visit('/spots').then(function() {
+      assert.equal(find('a:contains("Village Merchants")').length, 1);
+      assert.equal(find('a:contains("Red Fox")').length, 1);
+    });
+  });
+
+  test('Should be able to navigate to a spot page', function(assert) {
+    visit('/spots').then(function() {
+      click('a:contains("Village Merchants")').then(function() {
+        assert.equal(find('h4').text(), 'Village Merchants');
+      });
+    });
+  });
+
+  test('Should be able to visit a spot page', function(assert) {
+    visit('/spots/1').then(function() {
+      assert.equal(find('h4').text(), 'Village Merchants');
+    });
+  });
