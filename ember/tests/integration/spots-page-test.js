@@ -72,14 +72,15 @@ module('Integration - Spots Page', {
 
   test('Should remove entries that do not fit query', function(assert) {
     visit('spots').then(function() {
-      fillIn('Query', 'Red');
-      assert.notEqual(find('h4').text(), 'Village Merchants');
+      fillIn("input#query", 'Red');
+      assert.notEqual(find('li.spot a').text(), 'Village Merchants');
     });
   });
 
   test('Should retain entries that do fit query', function(assert) {
     visit('spots').then(function() {
-      fillIn('Query', 'Red');
-      assert.equal(find('h4').text(), 'Red Fox');
+      fillIn("input#query", 'Red').then(function() {
+        assert.equal(find('li.spot a').text(), 'Red Fox');
+      });
     });
   });

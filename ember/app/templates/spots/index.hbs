@@ -1,17 +1,14 @@
 <div id="find">
   <form>
     <label for="query">Query: </label>
-    {{ input type="text" value=search }}
-    <button {{action "query"}}>search</button>
+    {{ input type="text" id="query" value=search }}
   </form>
 </div>
 
 <ul>
   {{#each spot in arrangedContent}}
-    <li>
-      {{#link-to 'spots.show' spot}}
-        {{spot.name}}
-      {{/link-to}}
+    <li class="spot">
+      {{link-to spot.name 'spots.show' spot}}
     </li>
   {{/each}}
 </ul>
