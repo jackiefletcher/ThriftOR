@@ -1,9 +1,22 @@
+
+
 <h4>{{model.name}}</h4>
 <h6>{{model.location}}</h6>
+<h6>Latitude: {{model.latitude}}</h6>
+<h6>Longitude: {{model.longitude}}</h6>
+{{model.image_url}}
 <h6>{{model.kind}}</h6>
 <h6>{{model.price_range}}</h6>
 <h6>{{model.style}}</h6>
 <h6>{{model.hours}}</h6>
 <h6>Accepts cards: {{model.card}}</h6>
 <h6>{{model.dates}}</h6>
-<h6>{{model.phone}}</h6>
+
+
+<iframe
+width="600"
+height="450"
+frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAs1EqVwjjQtzplL4v02060BCBctNNN6Ww
+&q={{model.location}}">
+</iframe>
