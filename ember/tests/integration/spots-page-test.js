@@ -69,3 +69,17 @@ module('Integration - Spots Page', {
       assert.equal(find('h4').text(), 'Village Merchants');
     });
   });
+
+  test('Should remove entries that do not fit query', function(assert) {
+    visit('spots').then(function() {
+      fillIn('Query', 'Red');
+      assert.notEqual(find('h4').text(), 'Village Merchants');
+    });
+  });
+
+  test('Should retain entries that do fit query', function(assert) {
+    visit('spots').then(function() {
+      fillIn('Query', 'Red');
+      assert.equal(find('h4').text(), 'Red Fox');
+    });
+  });
