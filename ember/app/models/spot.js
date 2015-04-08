@@ -9,6 +9,6 @@ export default DS.Model.extend({
   hours: DS.attr('string'),
   dates: DS.attr('string'),
   phone: DS.attr('string'),
-  card: DS.attr('boolean')
-
+  card: DS.attr('boolean'),
+  image_url: DS.attr('string')
 });
