@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150407231447) do
+=======
+ActiveRecord::Schema.define(version: 20150408171734) do
+>>>>>>> 58e88adc318f59f6db2dacc18253e969cbe86763
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,8 +32,12 @@ ActiveRecord::Schema.define(version: 20150407231447) do
     t.string   "phone"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+<<<<<<< HEAD
     t.float    "latitude"
     t.float    "longitude"
+=======
+    t.string   "image_url"
+>>>>>>> 58e88adc318f59f6db2dacc18253e969cbe86763
   end
 
 end
