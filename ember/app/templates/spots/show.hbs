@@ -1,26 +1,36 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{model.name}}</h3>
+  </div>
+  <div class="panel-body">
+    {{model.location}}<br>
+    Latitude: {{model.latitude}}<br>
+    Longitude: {{model.longitude}}<br>
+    {{model.image_url}}
+    {{model.kind}}<br>
+    {{model.price_range}}<br>
+    {{model.style}}<br>
+    {{model.hours}}<br>
+    Accepts cards: {{model.card}}<br>
+    {{model.dates}}<br>
+  </div>
+</div>
 
+<div class="panel panel-default">
+  <div class="panel-heading">Closest ThriftORs! (Within 20 Miles, from nearest to furthest!)</div>
+  <div class="panel-body">
+    <ul>
+      {{#each spot in model.nearbys}}
+        <li>
+            {{~#link-to 'spots.show' spot}}
+              {{spot.name}}
+            {{~/link-to}}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
 
-<h4>{{model.name}}</h4>
-<h6>{{model.location}}</h6>
-<h6>Latitude: {{model.latitude}}</h6>
-<h6>Longitude: {{model.longitude}}</h6>
-{{model.image_url}}
-<h6>{{model.kind}}</h6>
-<h6>{{model.price_range}}</h6>
-<h6>{{model.style}}</h6>
-<h6>{{model.hours}}</h6>
-<h6>Accepts cards: {{model.card}}</h6>
-<h6>{{model.dates}}</h6>
-<h4>Closest ThriftORs! (Within 20 Miles, from nearest to furthest!)</h4>
-<ul>
-  {{#each spot in model.nearbys}}
-    <li>
-        {{~#link-to 'spots.show' spot}}
-          {{spot.name}}
-        {{~/link-to}}
-    </li>
-  {{/each}}
-</ul>
 <iframe
 width="600"
 height="450"
