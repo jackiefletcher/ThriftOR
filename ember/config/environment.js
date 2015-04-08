@@ -1,7 +1,14 @@
 /* jshint node: true */
 
+
 module.exports = function(environment) {
   var ENV = {
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'connect-src': "'self'",
+      'font-src': "'self' data: fonts.gstatic.com",
+      'style-src': "'self' 'unsafe-inline' fonts.googleapis.com"
+    },
     modulePrefix: 'thriftor',
     environment: environment,
     baseURL: '/',
