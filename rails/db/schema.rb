@@ -11,8 +11,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150408171734) do
-
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -23,7 +21,7 @@ ActiveRecord::Schema.define(version: 20150408171734) do
     t.string   "price_range"
     t.string   "style"
     t.string   "hours"
-    t.boolean  "card?"
+    t.boolean  "card"
     t.string   "dates"
     t.string   "phone"
     t.datetime "created_at",  null: false

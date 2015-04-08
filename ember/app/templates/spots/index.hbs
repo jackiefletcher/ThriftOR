@@ -1,9 +1,18 @@
+
 <div id="find">
   <form>
     <label for="query">Query: </label>
     {{ input type="text" id="query" value=search }}
   </form>
 </div>
+
+<iframe
+width="500"
+height="325"
+frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/search?key=AIzaSyAs1EqVwjjQtzplL4v02060BCBctNNN6Ww
+&q=thrift+stores+in+Portland">
+</iframe>
 
 <ul>
   {{#each spot in arrangedContent}}
@@ -12,3 +21,5 @@
     </li>
   {{/each}}
 </ul>
+
+{{#link-to 'spots.new'}}Add a spot{{/link-to}}
