@@ -11,8 +11,16 @@
 <h6>{{model.hours}}</h6>
 <h6>Accepts cards: {{model.card}}</h6>
 <h6>{{model.dates}}</h6>
-
-
+<h4>Closest ThriftORs! (Within 20 Miles, from nearest to furthest!)</h4>
+<ul>
+  {{#each spot in model.nearbys}}
+    <li>
+        {{~#link-to 'spots.show' spot}}
+          {{spot.name}}
+        {{~/link-to}}
+    </li>
+  {{/each}}
+</ul>
 <iframe
 width="600"
 height="450"
