@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Thriftor</title>
+    <title>ThriftOR</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,16 +11,22 @@
 
     <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="assets/thriftor.css">
+    <link rel="stylesheet" href="http://bootswatch.com/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     {{content-for 'head-footer'}}
   </head>
+
   <body>
-    {{content-for 'body'}}
+    <div class="container">
 
-    <script src="assets/vendor.js"></script>
-    <script src="assets/thriftor.js"></script>
+      {{content-for 'body'}}
 
+      <script src="assets/vendor.js"></script>
+      <script src="assets/thriftor.js"></script>
 
-    {{content-for 'body-footer'}}
+      {{content-for 'body-footer'}}
+
+    </div>
   </body>
 </html>

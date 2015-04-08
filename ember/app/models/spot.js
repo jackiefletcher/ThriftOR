@@ -3,8 +3,8 @@ import DS from 'ember-data';
 export default DS.Model.extend({
   name: DS.attr('string'),
     location: DS.attr('string'),
-    latitude: DS.attr('float'),
-    longitude: DS.attr('float'),
+    latitude: DS.attr('number'),
+    longitude: DS.attr('number'),
     kind: DS.attr('string'),
     price_range: DS.attr('string'),
     style: DS.attr('string'),
