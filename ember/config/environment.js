@@ -7,7 +7,8 @@ module.exports = function(environment) {
       'default-src': "'none'",
       'connect-src': "'self'",
       'font-src': "'self' data: fonts.gstatic.com",
-      'style-src': "'self' 'unsafe-inline' fonts.googleapis.com"
+      'style-src': "'self' 'unsafe-inline' fonts.googleapis.com",
+      'frame-src': "'self'"
     },
     modulePrefix: 'thriftor',
     environment: environment,
