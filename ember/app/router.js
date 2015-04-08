@@ -12,7 +12,7 @@ export default Router.map(function() {
 Router.map(function() {
   this.route('about');
   this.resource('spots', function() {
-    this.route('new-spot', {path: 'new'});
+    this.route('new', {path: 'new'});
     this.route('show', {path: ':spot_id'});
   });
 });

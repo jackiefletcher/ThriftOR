@@ -1,3 +1,50 @@
-{{#file-picker fileLoaded="fileLoaded"}}
-    Drag here or click to upload a file
-{{/file-picker}}
+<h1>Add a new ThriftSpot!</h1>
+
+<form>
+  <div class="form-group">
+    <label for="name">What is the name of the new spot?</label>
+    {{input value=name id="name" class="form-control"}}
+  </div>
+
+  <div class="form-group">
+    <label for="location">Where is it located?</label>
+    {{input value=location id="location" class="form-control"}}
+  </div>
+
+  <div class="form-group">
+    <label for="kind">What kind of sale/shop is it?</label>
+    {{input value=kind id="kind" class="form-control"}}
+  </div>
+
+  <div class="form-group">
+    <label for="price_range">What is the price range?</label>
+    {{input value=price_range id="price_range" class="form-control"}}
+  </div>
+
+  <div class="form-group">
+    <label for="style">What is the style of the finds?</label>
+    {{input value=style id="style" class="form-control"}}
+  </div>
+
+  <div class="form-group">
+    <label for="hours">What are the hours of the place/sale?</label>
+    {{input value=hours id="hours" class="form-control"}}
+  </div>
+
+  <div class="form-group">
+    <label for="dates">When is the sale?</label>
+    {{input value=dates id="dates" class="form-control"}}
+  </div>
+
+  <div class="form-group">
+    <label for="phone">What is the phone number there?</label>
+    {{input value=phone id="phone" class="form-control"}}
+  </div>
+
+  <div class="form-group">
+    <label for="card">Do they accept payment cards?</label>
+    {{input value=card id="card" class="form-control"}}
+  </div>
+
+  <button class="btn btn-primary"  {{action 'createSpot'}} >Add your Spot/Sale</button>
+</form>
