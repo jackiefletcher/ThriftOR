@@ -8,7 +8,8 @@ module.exports = function(environment) {
       'connect-src': "'self'",
       'font-src': "'self' data: fonts.gstatic.com",
       'style-src': "'self' 'unsafe-inline' fonts.googleapis.com",
-      'frame-src': "'self'"
+      'frame-src': "'self' snapwidget.com",
+      'script-src': "'self' snapwidget.com"
     },
     modulePrefix: 'thriftor',
     environment: environment,
