@@ -16,5 +16,8 @@ app.import('bower_components/bootswatch-dist/css/bootstrap.css');
 // modules that you would like to import into your application
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
-
+app.import('vendor/jquery-ui/jquery-ui.js');
+app.import('vendor/jquery.iframe-transport/jquery.iframe-transport.js');
+app.import('vendor/blueimp-file-upload/js/jquery.fileupload.js');
+app.import('vendor/cloudinary_js/js/jquery.cloudinary.js');
 module.exports = app.toTree();

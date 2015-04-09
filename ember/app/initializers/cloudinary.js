@@ -1,9 +1,10 @@
 export default {
   name: 'cloudinary',
 
-  initialize: function(/* container, app */) {
-     $.cloudinary.config({
-      cloud_name: ENV.CLOUDINARY_NAME
+  initialize: function() {
+    $.cloudinary.config({
+      cloud_name: 'MYCLOUD',
+      api_key:    'MYKEY'
     });
   }
 };

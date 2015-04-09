@@ -1,3 +1,5 @@
+import Ember from 'ember';
+
 export default Ember.Handlebars.makeBoundHelper(function(publicId, options) {
   if (Em.isBlank(publicId)) { return ''; }
 

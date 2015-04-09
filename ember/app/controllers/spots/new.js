@@ -12,7 +12,7 @@ export default Ember.Controller.extend({
       var dates = this.get('dates');
       var phone = this.get('phone');
       var card = this.get('card');
-      var cloudinaryPublicId = this.get('cloudinaryPublicId')
+      var cloudinaryPublicId = this.get('cloudinaryPublicId');
 
       var newSpot = this.store.createRecord('spot', {
         name: name,

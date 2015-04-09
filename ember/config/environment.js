@@ -33,8 +33,9 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
-    ENV.CLOUDINARY_NAME = 'db9pjrwi0';
-    ENV.CLOUDINARY_KEY = '172791912128255';
+    // ENV.CLOUDINARY_NAME = 'MYCLOUD';
+    // ENV.CLOUDINARY_KEY = 'MYKEY';
+
 
   }
 
@@ -42,8 +43,7 @@ module.exports = function(environment) {
     // Testem prefers this...
     ENV.baseURL = '/';
     ENV.locationType = 'none';
-    ENV.CLOUDINARY_NAME = 'db9pjrwi0';
-    ENV.CLOUDINARY_KEY = '172791912128255';
+
 
 
     // keep test console output quieter
