@@ -30,6 +30,15 @@ class Api::SpotsController < ApplicationController
     end
   end
 
+  def update
+    spot = Spot.find(params[:id])
+    if spot.update(spot_params)
+      head :no_content, status: :ok
+    else
+      render :json => spot.errors, status: :unprocessable_entity
+    end
+  end
+
 private
   def spot_params
     params.require(:spot).permit(
