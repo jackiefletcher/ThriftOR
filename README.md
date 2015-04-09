@@ -16,6 +16,10 @@ $rake db:create db:migrate db:seed
 ```
 Then, in the rails folder run
 ```
+$ bundle
+```
+Then, in the rails folder run
+```
 $ rails s
 ```
 Go into the ember project and then run
