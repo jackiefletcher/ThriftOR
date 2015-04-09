@@ -8,7 +8,7 @@ gem 'pg'
 # Use CoffeeScript for .coffee assets and views
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'geocoder'
-gem 'has_filepicker_image'
+gem 'rails-api'
 
 
 # Use ActiveModel has_secure_password
