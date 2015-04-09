@@ -12,6 +12,7 @@ export default Ember.Controller.extend({
       var dates = this.get('dates');
       var phone = this.get('phone');
       var card = this.get('card');
+      var cloudinaryPublicId = this.get('cloudinaryPublicId')
 
       var newSpot = this.store.createRecord('spot', {
         name: name,
@@ -23,6 +24,8 @@ export default Ember.Controller.extend({
         dates: dates,
         phone: phone,
         card: card
+        cloudinaryPublicId: cloudinaryPublicId
+
       });
 
       this.set('name', "");
@@ -34,7 +37,7 @@ export default Ember.Controller.extend({
       this.set('dates', "");
       this.set('phone', "");
       this.set('card', "");
-
+      this.set('cloudinaryPublicId', "");
       newSpot.save();
 
       this.transitionToRoute('spots');
