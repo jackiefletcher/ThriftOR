@@ -5,7 +5,7 @@ export default Ember.ArrayController.extend({
 
   arrangedContent: function() {
     var search = this.get('search');
-    if (!search) { return this.get('content') };
+    if (!search) { return this.get('content'); }
 
     return this.get('content').filter(function(spot) {
       return spot.get('name').indexOf(search) !== -1;
