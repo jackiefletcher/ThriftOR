@@ -10,6 +10,7 @@ export default Router.map(function() {
 });
 
 Router.map(function() {
+  this.resource('home', {path: '/'});
   this.route('about');
   this.resource('spots', function() {
     this.route('new', {path: 'new'});
