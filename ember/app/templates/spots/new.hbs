@@ -13,7 +13,7 @@
 
   <div class="form-group">
     <label for="kind">What kind of sale/shop is it?</label>
-    {{input value=kind id="kind" class="form-control"}}
+    {{view "select" content=kinds id="kind" value=kind}}
   </div>
 
   <div class="form-group">

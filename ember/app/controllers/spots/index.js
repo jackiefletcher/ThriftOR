@@ -11,5 +11,4 @@ export default Ember.ArrayController.extend({
       return spot.get('name').indexOf(search) !== -1;
     });
   }.property('content', 'search')
-
 });
