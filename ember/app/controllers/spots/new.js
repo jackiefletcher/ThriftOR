@@ -23,7 +23,7 @@ export default Ember.Controller.extend({
         hours: hours,
         dates: dates,
         phone: phone,
-        card: card
+        card: card,
         cloudinaryPublicId: cloudinaryPublicId
 
       });
