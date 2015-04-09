@@ -14,6 +14,7 @@ Router.map(function() {
   this.route('about');
   this.resource('spots', function() {
     this.route('new', {path: 'new'});
+    this.route('edit', {path: 'edit/:spot_id'});
     this.route('show', {path: ':spot_id'});
   });
 });

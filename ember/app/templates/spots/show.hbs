@@ -1,6 +1,13 @@
 <div class="panel panel-primary">
   <div class="panel-heading">
-    <h3 class="panel-title">{{model.name}}<button class="pull-right" {{action 'deleteSpot' }}>Delete Spot</button></h3>
+    <h3 class="panel-title">
+      {{model.name}}
+      {{~#link-to 'spots.edit' this}}
+        Edit
+      {{~/link-to}}
+
+      <button class="pull-right btn btn-warning btn-xs" {{action 'deleteSpot' }}>Delete Spot</button>
+    </h3>
   </div>
   <div class="panel-body">
     {{model.location}}<br>
