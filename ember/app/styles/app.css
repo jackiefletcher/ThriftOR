@@ -27,3 +27,10 @@ h2 {
 iframe img {
   padding-top: 20px;
 }
+
+#homeh3 {
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+  font-style: italic;
+  padding-left: 15%;
+}
