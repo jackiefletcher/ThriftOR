@@ -1,7 +1,18 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  kinds: ["Thrift", "Yard Sale", "Estate Sale"],
+  kinds: [
+          {kind: 'Thrift'},
+        {kind: 'Yard Sale'},
+      {kind: 'Estate Sale'}
+          ],
+
+  priceranges: [
+        {range: '$'},
+      {range: '$$'},
+    {range: '$$$'},
+  {range: '$$$$'}
+    ],
   actions: {
     createSpot: function() {
       var name = this.get('name');
