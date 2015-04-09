@@ -12,6 +12,6 @@ export default DS.Model.extend({
   dates: DS.attr('string'),
   phone: DS.attr('string'),
   card: DS.attr('boolean'),
-  image_url: DS.attr('string'),
+  cloudinaryPublicId: DS.attr('string'),
   nearbys: DS.attr()
 });
