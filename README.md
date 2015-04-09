@@ -6,21 +6,29 @@ ThriftOR
 Installation and Usage
 ------------
 
+To run the app simply clone this repository and in your terminal run
 ```
-To run the app simply clone this repository and in your terminal run `$postgres`
+$ postgres
 ```
+In the rails folder run
 ```
-`$rake db:create db:migrate db:seed`
+$rake db:create db:migrate db:seed
 ```
+Then, in the rails folder run
 ```
-Go into the ember project and then run `$ember init` and type n to all the following prompts.
+$ rails s
 ```
+Go into the ember project and then run
 ```
-In another tab run `rails s` and then run `$ember server --proxy http://localhost:3000`
+$ ember init
 ```
+...and type `n` to all the resulting prompts. This downloads needed packages without overwriting the project files. There must be a better way to do this, but we haven't yet determined what that is.
+
+Still within the ember directory, run
 ```
-then proceed to 'localhost:4200'.
+$ ember server --proxy http://localhost:3000
 ```
+Then launch a browser and enter the url `localhost:4200`
 
 ### No Known Bugs
 ------------
