@@ -30,3 +30,24 @@ iframe img {
   font-style: italic;
   padding-left: 15%;
 }
+
+.saleLabels {
+  font-family: 'Poiret One', cursive;
+}
+
+.saleLabels li {
+  list-style: none;
+}
+
+.aboutPage {
+  font-family: 'Poiret One', cursive;
+}
+
+.aboutPage h3 {
+  text-decoration: underline;
+}
+
+.newThriftBtn {
+  text-align: center;
+  margin-left: 50%;
+}

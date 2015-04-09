@@ -1,22 +1,50 @@
 
 <div id="find">
-  <form>
-    <label for="query">Query: </label>
-    {{ input type="text" id="query" value=search }}
-  </form>
+  <div class="form-group">
+    <form>
+      <label for="query" class="control-label">Query: </label>
+      {{ input type="text" id="query" value=search }}
+    </form>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4 saleLabels">
+    <h2>Thrift Stores</h2>
+    {{#each spot in controller.arrangedContent itemController='spot'}}
+      {{#if spot.kindIsThrift}}
+        <li class="spot">
+          {{link-to spot.model.name 'spots.show' spot}}
+        </li>
+      {{/if}}
+    {{/each}}
+  </div>
+  <div class="col-md-4 saleLabels">
+    <h2>Estate Sales</h2>
+    {{#each spot in controller.arrangedContent itemController='spot'}}
+      {{#if spot.kindIsEstate}}
+          <li class="spot">
+            {{link-to spot.model.name 'spots.show' spot}}
+          </li>
+      {{/if}}
+    {{/each}}
+  </div>
+  <div class="col-md-4 saleLabels">
+    <h2>Garage Sales</h2>
+    {{#each spot in controller.arrangedContent itemController='spot'}}
+      {{#if spot.kindIsGarage}}
+          <li class="spot">
+            {{link-to spot.model.name 'spots.show' spot}}
+          </li>
+      {{/if}}
+    {{/each}}
+  </div>
 </div>
 
-
-<ul>
-  {{#each spot in arrangedContent}}
-    <li class="spot">
-      {{link-to spot.name 'spots.show' spot}}
-    </li>
-  {{/each}}
-</ul>
-<div id="new-spot-link">
+<div class="newThriftBtn btn btn-primary">
   {{#link-to 'spots.new'}}Add a spot{{/link-to}}
 </div>
+
+<h5>A Map of Thrift Stores in Portlandia</h5>
 <iframe
 width="500"
 height="325"
