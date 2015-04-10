@@ -13,6 +13,12 @@ export default Ember.Controller.extend({
     {range: '$$$'},
   {range: '$$$$'}
     ],
+
+  cards: [
+    {card: true},
+    {card: false}
+  ],
+  
   actions: {
     createSpot: function() {
       var name = this.get('name');

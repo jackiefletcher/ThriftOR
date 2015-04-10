@@ -21,3 +21,14 @@ Spot.create(name: "Modo Boutique", location: "729 E Burnside St Ste 103 Portland
 
 Spot.create(name: "Adorned In Grace", location: "4949 SW 76th Ave
 Portland, OR 97225", phone: "(971) 244-1583", kind: "Thrift", price_range: "$", style: "Bridal Consignment", hours: "Sun-Mon CLOSED, Tues-Fri 1:00pm-5:00pm, Sat 10:00am-5:00pm", card: true , dates: nil, image_url: seed_image("adornedingrace") )
+
+
+Spot.create(name: "Annie May's Garage Sale", location: "3434 SE 45th Ave
+Portland, OR 97206", phone: "(971) 555-5555", kind: "Yard Sale", price_range: "$", style: "Vintage Fun!", hours: "Sat-Sun 10-5", card: false , dates: "5/2/2015-5/3/2015", image_url: seed_image("adornedingrace") )
+
+
+Spot.create(name: "Billy Bob's Moving Sale", location: "2055 Canal Drive
+Portland, OR 97225", phone: "(971) 555-5555", kind: "Yard Sale", price_range: "$", style: "All House Items, EVERYTHING MUST GO", hours: "Thur-Sun 10:00am-6:00pm", card: false , dates: "5/21/2015-5/24/2015", image_url: seed_image("adornedingrace") )
+
+
+Spot.create(name: "The Tweeble's Estate Sale", location: "15th and Knott, NE Portland, OR", phone: "(971) 444-4444", kind: "Estate Sale", price_range: "$$", style: "Everything Under The Sun", hours: "10:00am-5:00pm", card: true , dates: "Monday 5/11 - Sunday 5/17", image_url: seed_image("adornedingrace") )

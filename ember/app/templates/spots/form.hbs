@@ -48,10 +48,12 @@
               </div>
             </div>
             <div class="col-xs-6">
-              <!-- SELECT? -->
               <div class="form-group">
                 <label for="card">Accept Cards?</label>
-                {{input value=card id="card" class="form-control"}}
+                {{view "select"
+                content=cards
+                optionValuePath="content.card"
+                optionLabelPath="content.card"}}
               </div>
             </div>
           </div>
