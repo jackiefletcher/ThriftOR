@@ -18,7 +18,7 @@ export default Ember.Controller.extend({
     {card: true},
     {card: false}
   ],
-  
+
   actions: {
     createSpot: function() {
       var name = this.get('name');
@@ -42,6 +42,7 @@ export default Ember.Controller.extend({
         phone: phone,
         card: card
       });
+
 
       this.set('name', "");
       this.set('location', "");

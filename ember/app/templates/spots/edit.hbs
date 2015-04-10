@@ -1,1 +1,91 @@
-{{partial 'spots/form'}}
+<div class="row">
+  <div class="col-xs-2"></div>
+  <div class="col-xs-8">
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Edit A Spot</h3>
+      </div>
+      <div class="panel-body">
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            {{input value=model.name id="name" class="form-control" }}
+          </div>
+
+          <div class="form-group">
+            <label for="location">Location</label>
+            {{input value=model.location id="location" class="form-control"}}
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="form-group">
+                <label for="kind">Type</label>
+                {{view "select"
+                content=kinds
+                value=model.kind
+                optionValuePath="content.kind"
+                optionLabelPath="content.kind"}}
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <!-- SELECT? CHECKBOX? -->
+              <div class="form-group">
+                <label for="style">Style</label>
+                {{input value=model.style id="style" class="form-control"}}
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="form-group">
+                <label for="price_range">Price</label>
+                {{view "select"
+                content=priceranges
+                value=model.price
+                optionValuePath="content.range"
+                optionLabelPath="content.range"}}
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="form-group">
+                <label for="card">Accept Cards?</label>
+                {{view "select"
+                content=cards
+                value=model.card
+                optionValuePath="content.card"
+                optionLabelPath="content.card"}}
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="form-group">
+            <label for="hours">Open Hours</label>
+            {{input value=model.hours id="hours" class="form-control"}}
+          </div>
+
+          <div class="form-group">
+            <label for="dates">Dates</label>
+            {{input value=model.dates id="dates" class="form-control"}}
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            {{input value=model.phone id="phone" class="form-control"}}
+          </div>
+
+
+
+          <button class="btn btn-primary"  {{action 'updateSpot'}}>Make it so</button>
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-2"></div>
+</div>

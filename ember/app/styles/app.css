@@ -50,4 +50,17 @@ iframe img {
 .newThriftBtn {
   text-align: center;
   margin-left: 50%;
+  margin-top: 10px;
+}
+
+.saleLabels li {
+  text-align: center;
+}
+
+.pull-right {
+  margin-right: 5px;
+}
+
+.closeThriftors {
+  list-style: none;
 }

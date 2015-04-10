@@ -2,8 +2,8 @@
   <div class="panel-heading">
     <h3 class="panel-title">
       {{model.name}}
-      {{~#link-to 'spots.edit' this}}
-        Edit
+      {{~#link-to 'spots.edit' this class="pull-right btn btn-warning btn-xs"}}
+        Edit Spot
       {{~/link-to}}
 
       <button class="pull-right btn btn-warning btn-xs" {{action 'deleteSpot' }}>Delete Spot</button>
@@ -26,7 +26,7 @@
 <div class="panel panel-default">
   <div class="panel-heading">Closest ThriftORs! (Within 20 Miles, from nearest to furthest!)</div>
   <div class="panel-body">
-    <ul>
+    <ul class="closeThriftors">
       {{#each spot in model.nearbys}}
         <li>
             {{~#link-to 'spots.show' spot}}
