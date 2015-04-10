@@ -42,3 +42,18 @@ iframe img {
 .aboutPage h3 {
   text-decoration: underline;
 }
+
+.newThriftBtn {
+  text-align: center;
+  margin-left: 50%;
+  margin-top: 10px;
+}
+
+
+.pull-right {
+  margin-right: 5px;
+}
+
+.closeThriftors {
+  list-style: none;
+}

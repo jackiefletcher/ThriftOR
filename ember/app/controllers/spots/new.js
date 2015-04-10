@@ -5,7 +5,6 @@ export default Ember.Controller.extend({
   priceranges: ['$','$$','$$$','$$$$'],
   cards: [true,false],
   styles: ['Bohemian','Vintage','Paleo','Health Goth','Normcore','Burner','Cyberpunk','Steampunk','Gutterpunk','Glitterpunk'],
-
   actions: {
     createSpot: function() {
       var name = this.get('name');
@@ -29,6 +28,7 @@ export default Ember.Controller.extend({
         phone: phone,
         card: card
       });
+
 
       this.set('name', "");
       this.set('location', "");
