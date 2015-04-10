@@ -8,7 +8,6 @@ export default Ember.Controller.extend({
 
   actions: {
     createSpot: function() {
-      debugger;
       var name = this.get('name');
       var location = this.get('location');
       var kind = this.get('kind');
