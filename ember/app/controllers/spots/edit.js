@@ -4,7 +4,7 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   kinds: [
 {kind: 'Thrift'},
-{kind: 'Garage Sale'},
+{kind: 'Yard Sale'},
 {kind: 'Estate Sale'}
 ],
 
