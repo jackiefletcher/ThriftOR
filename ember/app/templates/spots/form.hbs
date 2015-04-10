@@ -24,8 +24,7 @@
                 <label for="kind">Type</label>
                 {{view "select"
                 content=kinds
-                optionValuePath="content.kind"
-                optionLabelPath="content.kind"}}
+                }}
               </div>
             </div>
             <div class="col-xs-6">
@@ -48,12 +47,10 @@
               </div>
             </div>
             <div class="col-xs-6">
+              <!-- SELECT? -->
               <div class="form-group">
                 <label for="card">Accept Cards?</label>
-                {{view "select"
-                content=cards
-                optionValuePath="content.card"
-                optionLabelPath="content.card"}}
+                {{input value=card id="card" class="form-control"}}
               </div>
             </div>
           </div>

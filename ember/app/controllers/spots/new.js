@@ -1,24 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  kinds: [
-          {kind: 'Thrift'},
-        {kind: 'Yard Sale'},
-      {kind: 'Estate Sale'}
-          ],
-
-  priceranges: [
-        {range: '$'},
-      {range: '$$'},
-    {range: '$$$'},
-  {range: '$$$$'}
-    ],
-
-  cards: [
-    {card: true},
-    {card: false}
-  ],
-
+  kinds: ['Thrift','Yard Sale','Estate Sale'],
+  priceranges: ['$','$$','$$$','$$$$'],
+  cards: [true,false],
+  styles: ['Bohemian','Vintage','Paleo','Health Goth','Normcore','Burner','Cyberpunk','Steampunk','Gutterpunk','Glitterpunk'],
   actions: {
     createSpot: function() {
       var name = this.get('name');

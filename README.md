@@ -24,10 +24,9 @@ $ rails s
 ```
 Go into the ember project and then run
 ```
-$ ember init
+$ npm install
+$ bower install
 ```
-...and type `n` to all the resulting prompts. This downloads needed packages without overwriting the project files. There must be a better way to do this, but we haven't yet determined what that is.
-
 Still within the ember directory, run
 ```
 $ ember server --proxy http://localhost:3000
