@@ -11,12 +11,5 @@ export default Ember.Controller.extend({
     return this.get('model.kind') === 'Thrift';
   }.property('kind'),
 
-    actions: {
-        fileLoaded: function(file) {
-            // readAs="readAsFile"
-            console.log(file.name, file.type, file.size);
-            // readAs="readAsArrayBuffer|readAsBinaryString|readAsDataURL|readAsText"
-            console.log(file.filename, file.type, file.data, file.size);
-        }
-    }
+
 });
