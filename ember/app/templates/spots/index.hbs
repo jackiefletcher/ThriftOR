@@ -1,12 +1,17 @@
 
-<div id="find">
+
+<div class="panel panel-default">
   <div class="form-group">
     <form>
-      <label for="query" class="control-label">Search by Name (case sensitive!): </label>
-      {{ input type="text" id="query" value=search }}
+      <label for="query" class="control-label">Search <small>(case sensitive)</small></label>
+      {{ input type="text" id="query" value=search class="form-control"}}
     </form>
   </div>
 </div>
+
+
+
+
 <div class="row">
   <div class="col-md-4 saleLabels">
     <h2>Thrift Stores</h2>
@@ -39,12 +44,16 @@
     {{/each}}
   </div>
 </div>
-
+<hr>
 <div class="newThriftBtn btn btn-primary">
   {{#link-to 'spots.new'}}Add a spot{{/link-to}}
 </div>
 
-<h5>A Map of Thrift Stores in Portlandia</h5>
+
+<hr>
+
+<div class="text-center">
+
 <iframe
 width="500"
 height="325"
@@ -52,3 +61,4 @@ frameborder="0" style="border:0"
 src="https://www.google.com/maps/embed/v1/search?key=AIzaSyAs1EqVwjjQtzplL4v02060BCBctNNN6Ww
 &q=thrift+stores+in+Portland">
 </iframe>
+</div>
