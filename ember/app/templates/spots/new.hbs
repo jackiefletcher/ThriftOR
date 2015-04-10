@@ -22,17 +22,14 @@
             <div class="col-xs-6">
               <div class="form-group">
                 <label for="kind">Type</label>
-                {{view "select"
-                content=kinds
-                optionValuePath="content.kind"
-                optionLabelPath="content.kind"}}
+                {{view "select" content=kinds value=kind}}
               </div>
             </div>
             <div class="col-xs-6">
               <!-- SELECT? CHECKBOX? -->
               <div class="form-group">
                 <label for="style">Style</label>
-                {{input value=style id="style" class="form-control"}}
+                {{view "select" content=styles value=style}}
               </div>
             </div>
           </div>
@@ -41,17 +38,13 @@
             <div class="col-xs-6">
               <div class="form-group">
                 <label for="price_range">Price</label>
-                {{view "select"
-                content=priceranges
-                optionValuePath="content.range"
-                optionLabelPath="content.range"}}
+                {{view "select" content=priceranges value=price_range}}
               </div>
             </div>
             <div class="col-xs-6">
-              <!-- SELECT? -->
               <div class="form-group">
                 <label for="card">Accept Cards?</label>
-                {{input value=card id="card" class="form-control"}}
+                {{view "select" content=cards value=card}}
               </div>
             </div>
           </div>
